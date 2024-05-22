@@ -1,0 +1,218 @@
+/* gva_member_reports.css */
+
+/* Dashboard menu styles */
+nav.member-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
+
+ul.member-menu {
+    align-self: center;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}
+
+li.member-menu-item {
+    margin: 18px;
+    width: 30%;
+    background-color: #e8c500;  
+    border-radius: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+}
+
+a.member-menu-link {
+    padding: 12px 16px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.member-menu-link a:hover {
+    color: #0073aa;
+}
+
+.member-menu-link i {
+    margin-right: 8px;
+}
+
+/* Page Style */
+div.dashboard-container {
+    width: 95%;
+    margin: auto;
+}
+#main-content {
+    padding-top: 20px;
+}
+
+/* login + register forms */
+
+.gva-alert {
+    background-color: #d98b25cb;
+    color: rgb(49, 19, 19);
+    border-radius: 9px;
+    padding-left: 12px; /* A little padding for breathing room */
+    padding-right: 12px;
+    margin: auto;
+    width: 30%;
+    text-align: center; /* Ensures the text is centered */
+    margin-bottom: 10px;
+}
+.gva-success-message {
+    background-color: #daf2d1;   /* Light green background */
+    border: 2px solid #9ecd8c;  /* Green border */
+    padding-left: 12px; /* A little padding for breathing room */
+    padding-right: 12px;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 9px;
+    text-align: center;
+}
+
+/* Flexbox for side-by-side forms */
+.gva-login-register {
+    display: flex;
+    width: 100%;
+    justify-content: center; /* This will evenly space the two forms */
+    gap: 20px; /* A gap between the two forms, adjust as needed */
+    padding-bottom: 20px;
+}
+
+/* Styling for the individual form sections */
+.member-login, .member-register {
+    background-image: url('form-box.svg');
+    background-repeat: no-repeat; /* Prevents the SVG from repeating */
+    background-position: center;  /* Centers the SVG */
+    background-size: auto;     /* Ensures the SVG fits within the section */
+    width: 400px;
+    height: 400px;
+    border: 2px solid #002157;
+    padding: 10px; /* Add a bit of padding for spacing inside the form sections */
+    box-sizing: border-box; /* Makes sure padding is included in the width and height */
+}
+
+/* Styling for the labels */
+.member-login label, .member-register label, .member-login h4, .member-register h4 {
+    color: #333333;
+    font-weight: bold;
+    display: block; /* Ensures the labels appear above the fields */
+    margin-bottom: 5px; /* Spacing between label and the input field */
+    text-align: left;
+}
+
+/* Styling for the input fields */
+.member-login input[type="text"], 
+.member-login input[type="password"], 
+.member-register input[type="text"], 
+.member-register input[type="password"], 
+.member-register input[type="email"] {
+    width: 100%; /* Full width of the form section, minus padding */
+    padding: 5px 0; /* Padding top and bottom for visual appearance */
+    border: none; /* Remove all borders */
+    border-bottom: 1px solid #ccc; /* Add only bottom border */
+    margin-bottom: 10px; /* Space between fields */
+    box-sizing: border-box; /* Makes sure borders and padding are included in total width/height */
+    background-color: transparent; /* Ensure transparent background */
+    outline: none; /* Remove the outline when focused */
+}
+
+/* Hover effect for the input fields */
+.member-login input[type="text"]:hover, 
+.member-login input[type="password"]:hover, 
+.member-register input[type="text"]:hover, 
+.member-register input[type="password"]:hover, 
+.member-register input[type="email"]:hover {
+    border-bottom-color: #002157; /* Change border color on hover */
+}
+
+/* Focus effect for the input fields */
+.member-login input[type="text"]:focus, 
+.member-login input[type="password"]:focus, 
+.member-register input[type="text"]:focus, 
+.member-register input[type="password"]:focus, 
+.member-register input[type="email"]:focus {
+    border-bottom-color: #0073aa; 
+    box-shadow: 0 1px 0 #0073aa; /* Optional: for a bit of depth. You can remove if not needed */
+}
+
+
+/* Styling for the submit buttons */
+.button-primary, #register  {
+    background-color: #e8c500;
+    color: #002157;
+    display: block;
+    margin: 0 auto;
+    border-style: solid;
+    border-color:#002157;
+    border-width: 2px;
+    box-shadow: 0 4px 6px rgba(0, 33, 87, 0.1);
+    border-radius: 4px;
+    padding: 8px 15px; /* Adjust padding as needed for button size */
+    cursor: pointer; /* Changes the cursor to a hand when hovering over the button */
+    transition: 0.3s ease; /* Smoothens any hover effect */
+}
+
+/* Add a hover effect to make the button slightly darker when hovered */
+.button-primary:hover, #register:hover {
+    background-color: #d0b200;
+}
+
+/* Sytling for lost password link/button*/
+a.lostpw {
+    position: relative;
+    top: 30px;
+    left: 107px;
+    border: 2px solid #d0b200;
+    border-radius: 5px;
+    background-color: #daf2d1;
+}
+
+
+/* Media Queries for various screen sizes*/
+
+@media screen and (max-width: 782px) {
+ nav.member-menu { padding-top: 3em; }
+ ul.member-menu {  width:100%;  }  
+ li.member-menu-item {  
+    width: 45%;
+    align-self: center;
+    white-space: nowrap;
+    overflow: hidden;
+ }
+ .gva-login-register {
+    display: flex;
+    width: 100%;
+    justify-content: center; /* This will evenly space the two forms */
+    flex-wrap: wrap;
+    gap: 20px; /* A gap between the two forms, adjust as needed */
+}
+.gva-alert {
+    width: 60%;
+}
+.gva-success-message {
+    width: 60%;
+}
+}
+@media screen and (max-width: 480px) {
+    a.member-menu-item   { 
+        font-size: 4vw;
+     }
+.gva-alert {
+    width: 80%;
+}
+.gva-success-message {
+    width: 80%;
+}
+}

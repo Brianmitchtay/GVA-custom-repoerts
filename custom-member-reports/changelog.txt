@@ -1,0 +1,16 @@
++__________________+
+V.0.3.1 10-15-2023
+- Removing PayPal contact form page from admin for subscribers
+V.0.3.0 9-30-2023
+- Added success redirect and message on successful registration
+- Added link to business statistics from admin area for members
+V.0.2.9 9-30-2023
+- Styled Login + Register Forms, added custom SVG for BG
+V.0.2.8 09-24-2023
+- Stated-connected-business is now added by ACF field group. (removed from plugin)
+- added admin-permissions.php hiding metaboxes and menu pages for business members.
+V.0.2.7 09-18-2023
+- Added registration form to membership page for logged-out users.
+V.0.2.6 09-17-2023
+- Add CSS styling for menu in mobile viewports 
+
